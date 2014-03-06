@@ -1,0 +1,221 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      8451,        212]
+NotebookOptionsPosition[      7756,        187]
+NotebookOutlinePosition[      8199,        204]
+CellTagsIndexPosition[      8156,        201]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "PHAS2441/3444 ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " 2014"
+}], "Subtitle",
+ CellChangeTimes->{{3.434475100318698*^9, 3.434475106509158*^9}, {
+  3.53805127244492*^9, 3.538051281743*^9}, {3.6011091017008266`*^9, 
+  3.6011091519437003`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Problem sheet [28 marks]\n",
+ StyleBox["please submit your work as a .nb file", "Subtitle"]
+}], "Title",
+ CellChangeTimes->{{3.434475197508357*^9, 3.4344752193322763`*^9}, {
+  3.4346324325181627`*^9, 3.4346324416649523`*^9}, {3.434632616509172*^9, 
+  3.4346326321047773`*^9}}],
+
+Cell[TextData[{
+ "1.  [4 marks]\n1.1  Define the function f(x) = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["x", "2"], " "}], TraditionalForm]]],
+ "sin(5 x) exp(-x/2) and plot it in the range from 1 to 4.  \n1.2  Find\n     \
+          1.2.1  the indefinite integral of f(x) \n               1.2.2  the \
+integral from 1 to 4 of  f(x) (expressed as one real number) \n               \
+   Do part 1.2.2 a) by using Mathematica's definite integration procedure and \
+ \n                             .          b) by using the indefinite \
+integral and inserting the limits using rules "
+}], "Text",
+ CellChangeTimes->{{3.4344751975087643`*^9, 3.4344752193325357`*^9}, {
+  3.434630687996048*^9, 3.434630730092701*^9}, {3.4346308971688423`*^9, 
+  3.434630897456723*^9}, {3.434631495931834*^9, 3.43463151768371*^9}},
+ FontFamily->"Times New Roman",
+ FontSize->14,
+ FontColor->RGBColor[0, 0, 1],
+ Background->RGBColor[1, 1, 0]],
+
+Cell["\<\
+2. Write a function that will behave as follows: [4 marks]
+       2.1 if called with an argument which is an integer, it will return the \
+absolute value of the input 
+       2.2 if called with a real argument, it will return the number rounded \
+to the nearest integer if the argument is positive, zero if the argument is \
+negative. 
+       2.3 if called with a complex argument, it will round the real part and \
+the imaginary part to the nearest integer and return the modulus of the \
+result. 
+       Check your result on 3, -4, 2.3, -2.7, (3.1+2.9i)\
+\>", "Text",
+ CellChangeTimes->{{3.401125928859*^9, 3.40112593101525*^9}, {
+  3.434475197509122*^9, 3.43447521933296*^9}, {3.434630660844736*^9, 
+  3.434630660948114*^9}, {3.434630692060027*^9, 3.43463069578794*^9}, {
+  3.434630735005632*^9, 3.434630744605295*^9}, {3.434630905954612*^9, 
+  3.434630908528944*^9}, {3.434631053499465*^9, 3.4346310536034527`*^9}, {
+  3.434631434443552*^9, 3.434631440371793*^9}},
+ FontFamily->"Times New Roman",
+ FontSize->14,
+ FontColor->RGBColor[0, 0, 1],
+ Background->RGBColor[1, 1, 0]],
+
+Cell["\<\
+3. [2 marks]
+      3.1 Find the eigenvalues and eigenvectors of the matrix  \
+{{a,-b,0},{-b,a,-c},{0,-c,a}}.
+      3.2 Check that the eigenvectors are orthogonal by calculating the dot \
+product between pairs of eigenvectors for all relevant cases. \
+\>", "Text",
+ CellChangeTimes->{{3.401121270874625*^9, 3.40112131257775*^9}, {
+  3.434475197509433*^9, 3.434475219333344*^9}, {3.434630664611897*^9, 
+  3.434630664747912*^9}, {3.434630749556645*^9, 3.43463079717266*^9}, {
+  3.434630879205752*^9, 3.434630879261689*^9}, {3.434631443683408*^9, 
+  3.434631461243585*^9}},
+ FontFamily->"Times New Roman",
+ FontSize->14,
+ FontColor->RGBColor[0, 0, 1],
+ Background->RGBColor[1, 1, 0]],
+
+Cell["\<\
+4.   Solve the following differential equation:  [8 marks]
+\t     3 y''(x) - y'(x) + y(x)/3=0
+\t4.1   First generally
+\t4.2  Then with the boundary conditions y(0)=1 and y'(0) =-1 
+\t4.3 Numerically with x in the range -15 to +15 (with the boundary \
+conditions)   
+\t4.4 Plot solutions ii and iii with x in the range -15 to +15, and then the \
+difference between the two solutions \t
+\t4.5  How many solutions are there to y(x)=0 in this range? Use FindRoot to \
+find these solutions to at least 3 decimal places \
+\>", "Text",
+ CellChangeTimes->{{3.40112573289025*^9, 3.401125733155875*^9}, {
+   3.434475197509582*^9, 3.4344752193335342`*^9}, {3.434630667716071*^9, 
+   3.434630667843943*^9}, {3.434630812581468*^9, 3.434630859788968*^9}, {
+   3.4346309619714603`*^9, 3.434630962803515*^9}, 3.43463142080811*^9, {
+   3.434631476843315*^9, 3.434631480219699*^9}, {3.434632220665729*^9, 
+   3.434632221114113*^9}, {3.434704151032063*^9, 3.434704170816162*^9}},
+ FontFamily->"Times New Roman",
+ FontSize->14,
+ FontColor->RGBColor[0, 0, 1],
+ Background->RGBColor[1, 1, 0]],
+
+Cell["\<\
+5.   This is an exercise in statistics and plotting: [10 marks]
+               5.1  Generate a list (named distances) of 100 real random \
+numbers in the interval between 290 and 650. using the following command:\
+\>", "Text",
+ CellChangeTimes->{{3.401123089312125*^9, 3.4011231242965*^9}, {
+  3.4344751975225267`*^9, 3.434475219341671*^9}, {3.434630670012067*^9, 
+  3.434630670540094*^9}, {3.434630981707616*^9, 3.43463098507552*^9}, {
+  3.434631106590372*^9, 3.434631106934388*^9}, {3.434632209428666*^9, 
+  3.434632210649819*^9}, {3.434704175392132*^9, 3.434704176800212*^9}},
+ FontFamily->"Times New Roman",
+ FontSize->14,
+ FontColor->RGBColor[0, 0, 1],
+ Background->RGBColor[1, 1, 0]],
+
+Cell[BoxData[
+ RowBox[{"distances", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Random", "[", 
+     RowBox[{"Real", ",", 
+      RowBox[{"{", 
+       RowBox[{"290", ",", "650"}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", "100", "}"}]}], "]"}]}]], "Input"],
+
+Cell["\<\
+
+               5.2  Generate a second list (name it tanksizes) of 100 real \
+random numbers in the interval between 15 and 60.  
+               5.3  Assume that these lists represent the distances a car can \
+travel on a full tank, and the tank sizes of the cars. 
+                      Sort both lists from the smallest to the largest value, \
+then create an array  (list of lists - name it stats ) consisting of 
+                      the paired weights and heights from your two previous \
+lists  
+                      i.e. stats = ( (distances(1), tanksizes(1)), \
+(distances(2), tanksizes(2)),......., (distances(n),tanksizes(n)) ) .  
+               5.4  Plot a graph showing the distribution.  
+               5,5   Fit a straight line through the sample and then plot \
+your data and the fit on the same graph. Label the axes 
+               5.6  Assume that your line fit represents the average \
+consumption for small cars and write a function named 
+\t      underOver[h,w] which takes h and w as arguments (where h is the \
+distance in km and w is the tanksize in 
+\t      litres) and returns the difference between the tank size entered and \
+the \"average\" tanksize shown by the curve for 
+\t      the distance entered.  
+               5.7  Test your function with the following pair of values: \
+(405,39), (502,35), (599,52). 
+           
+\
+\>", "Text",
+ CellChangeTimes->{{3.401123089312125*^9, 3.40112311226525*^9}, {
+   3.401124231249625*^9, 3.4011242575465*^9}, 3.401124391093375*^9, {
+   3.401125847655875*^9, 3.401125852093375*^9}, {3.4344751975232983`*^9, 
+   3.434475219342586*^9}, {3.4346310135347853`*^9, 3.434631030710021*^9}, {
+   3.434704179151907*^9, 3.434704202631946*^9}},
+ FontFamily->"Times New Roman",
+ FontSize->14,
+ FontColor->RGBColor[0, 0, 1],
+ Background->RGBColor[1, 1, 0]]
+}, Open  ]]
+},
+WindowSize->{784, 539},
+WindowMargins->{{0, Automatic}, {-219, Automatic}},
+ShowSelection->True,
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Report"}, "StandardReport.nb", 
+  CharacterEncoding -> "WindowsANSI"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 272, 8, 36, "Subtitle"],
+Cell[CellGroupData[{
+Cell[842, 32, 294, 6, 137, "Title"],
+Cell[1139, 40, 938, 19, 160, "Text"],
+Cell[2080, 61, 1088, 21, 160, "Text"],
+Cell[3171, 84, 689, 15, 103, "Text"],
+Cell[3863, 101, 1080, 21, 179, "Text"],
+Cell[4946, 124, 699, 13, 84, "Text"],
+Cell[5648, 139, 263, 8, 40, "Input"],
+Cell[5914, 149, 1826, 35, 464, "Text"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
